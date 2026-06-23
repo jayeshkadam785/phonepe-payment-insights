@@ -112,7 +112,6 @@ df = pd.DataFrame({
     "day_type": ["Weekday" if d.weekday() < 5 else "Weekend" for d in dates],
     "service_type": service_types,
     "amount": amounts,
-    "status": statuses,
     "age_segment": txn_age
 })
 
@@ -128,4 +127,4 @@ df.to_csv("data/phonepe_transactions.csv", index=False)
 print(f"✅ Generated {len(df)} transactions")
 print(f"Total Value: ₹{df[df.status=='Successful']['amount'].sum()/1e9:.2f}bn")
 print(f"Total Users: {df['user_id'].nunique()}")
-print(f"Success Rate: {(df.status=='Successful
+print(f"Success Rate: {(df.status=='Successful').sum()/len(df)*100:.2f}%")
