@@ -40,36 +40,4 @@ phonepe-dashboard/
 │   └── phonepe_transactions.csv   # Generated dataset (300K rows)
 └── README.md
 Code
-▶️ How to Run Locally
-Bash
-# 1. Clone the repo
-git clone https://github.com/jayeshkadam785/phonepe-payment-insights.git
-cd phonepe-payment-insights
 
-# 2. Install dependencies
-pip install -r requirements.txt
-
-# 3. Generate the dataset
-python generate_data.py
-
-# 4. Run the dashboard
-streamlit run app.py
-Open your browser at http://localhost:8501
-🌐 Deploy on Streamlit Cloud (Free)
-Push this repo to GitHub
-Go to share.streamlit.io
-Connect your GitHub repo
-Set Main file path → app.py
-Click Deploy ✅
-📊 Dashboard Features
-Sidebar filters — Filter by Month & Payment Status
-KPI Cards — Total transactions, value, users, success rate
-Transaction Over Time — Line chart with dual axis
-Age Segment Contribution — Donut chart (Gen X, Millennial, Gen Z, Boomer)
-Service Transaction Value — Horizontal bar chart
-Top 5 Users — Bar chart by transaction value
-Weekday vs Weekend — Donut chart
-Insights Panel — Key business findings
-👨‍💻 Author
-Jayesh Kadam
-B.Tech AI & Data Science | KBP College of Engineering, Satara
